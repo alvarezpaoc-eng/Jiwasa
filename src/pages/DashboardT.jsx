@@ -213,13 +213,14 @@ export default function DashboardT() {
               accentText="text-green-600"
               onClick={() => navigate('/therapist/chat')}
             />
+            {/* ── BOTÓN ACTUALIZADO → nueva página de reportes familiares ── */}
             <QuickActionCard
               emoji="📈"
               label="Ver reportes"
-              desc="Historial y evidencias"
+              desc="Actividades en casa"
               color="bg-purple-50"
               accentText="text-purple-500"
-              onClick={() => navigate('/therapist/reportes')}
+              onClick={() => navigate('/therapist/reportes-familias')}
             />
           </div>
         </section>

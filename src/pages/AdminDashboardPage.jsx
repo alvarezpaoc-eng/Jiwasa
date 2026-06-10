@@ -258,7 +258,7 @@ export default function AdminDashboardPage() {
               <div className="grid grid-cols-2 gap-3">
                 {[
                   { emoji: '📥', label: 'Exportar', desc: 'PDF', action: () => navigate('/admin/exportar') },
-                  { emoji: '➕', label: 'Invitar', desc: 'Terapeuta', action: () => navigate('/admin/invitar-terapeuta') },
+                  { emoji: '📈', label: 'Reportes', desc: 'Familiares', action: () => navigate('/admin/invitar-terapeuta') },
                   { emoji: '📬', label: 'Mensajes', desc: 'Chat', action: () => navigate('/admin/chat') },
                   { emoji: '⚙️', label: 'Config', desc: 'Ajustes', action: () => navigate('/admin/configuracion') },
                 ].map(({ emoji, label, desc, action }) => (

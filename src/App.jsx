@@ -16,6 +16,7 @@ import DashboardT from './pages/DashboardT'
 import EspecialistasTPage from './pages/EspecialistasTPage'
 import ReportesTPage from './pages/ReportesTPage'
 import CrearActividadT from './pages/CrearActividadT'
+import ReportesFamiliaresT from './pages/ReportesFamiliaresT'   // ← NUEVO
 
 // ── Admin ─────────────────────────────────────────────────────────────────────
 import AdminDashboardPage from './pages/AdminDashboardPage'
@@ -27,7 +28,7 @@ import AdminFamiliaDetailPage from './pages/AdminFamiliaDetailPage'
 import AdminChatPage from './pages/AdminChatPage'
 import AdminConfigPage from './pages/AdminConfigPage'
 import AdminReportesPage from './pages/AdminReportesPage'
-import AdminExportarPage from './pages/AdminExportarPage'
+import AdminExportarPage from './pages/AdminExportarpage'
 
 // ── Placeholder ───────────────────────────────────────────────────────────────
 const Placeholder = ({ title, back = '/' }) => (
@@ -73,9 +74,10 @@ export default function App() {
         <Route path="/therapist" element={<DashboardT />} />
 
         {/* ── Terapeuta: sub-páginas ────────────────────────────── */}
-        <Route path="/therapist/chat"            element={<EspecialistasTPage />} />
-        <Route path="/therapist/reportes"        element={<ReportesTPage />} />
-        <Route path="/therapist/crear-actividad" element={<CrearActividadT />} />
+        <Route path="/therapist/chat"              element={<EspecialistasTPage />} />
+        <Route path="/therapist/reportes"          element={<ReportesTPage />} />
+        <Route path="/therapist/crear-actividad"   element={<CrearActividadT />} />
+        <Route path="/therapist/reportes-familias" element={<ReportesFamiliaresT />} />  {/* ← NUEVO */}
 
         {/* ── Admin: dashboard principal ─────────────────────────── */}
         <Route path="/admin" element={<AdminDashboardPage />} />
@@ -83,7 +85,7 @@ export default function App() {
         {/* ── Admin: terapeutas ─────────────────────────────────── */}
         <Route path="/admin/terapeutas"        element={<AdminTerapeutasListPage />} />
         <Route path="/admin/terapeuta/:id"     element={<AdminTerapistaDetailPage />} />
-        <Route path="/admin/invitar-terapeuta" element={<AdminInvitarTerapeutaPage />} />
+        <Route path="/admin/invitar-terapeuta" element={<ReportesFamiliaresT />} />
 
         {/* ── Admin: familias ───────────────────────────────────── */}
         <Route path="/admin/familias"     element={<AdminFamiliasPage />} />
