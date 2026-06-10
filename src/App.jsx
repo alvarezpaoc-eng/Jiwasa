@@ -28,7 +28,7 @@ import AdminFamiliaDetailPage from './pages/AdminFamiliaDetailPage'
 import AdminChatPage from './pages/AdminChatPage'
 import AdminConfigPage from './pages/AdminConfigPage'
 import AdminReportesPage from './pages/AdminReportesPage'
-import AdminExportarPage from './pages/AdminExportarpage'
+import AdminExportarPage from './pages/AdminExportarPage'
 
 // ── Placeholder ───────────────────────────────────────────────────────────────
 const Placeholder = ({ title, back = '/' }) => (
